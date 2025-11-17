@@ -1,3 +1,6 @@
+![Dashboard Screenshot](mock-api.png)
+
+
 🚀 Mock-API ManagerThe Mock-API Manager is a self-hosted, full-featured tool designed to create, manage, and monitor mock API endpoints for your development and testing needs. It provides a clean web interface to dynamically configure mock responses, latency, status codes, and track real-time usage and errors.
 
 ✨ FeaturesFull CRUD API: Manage Environments, Endpoints, and Responses via a dedicated REST API.Dynamic Mocking: Serves mock API requests based on configured rules, paths, and methods.PostgreSQL Database: Robust and scalable data persistence for configurations and request logs.Real-time Monitoring: Dedicated dashboard to view request statistics, error rates, average latency, and recent activity logs.Security & Efficiency: Built with modern Node.js/Express best practices, including Helmet for security and non-blocking database logging.
